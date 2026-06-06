@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibe2Text — транскрибация и расшифровка аудио и видео в текст онлайн</title>
+<meta name="description" content="Транскрибация и расшифровка аудио и видео в текст с AI: распознавание русской речи, диаризация спикеров, краткое содержание, action items и чат по записи. Транскрибация видео с YouTube, расшифровка интервью и звонков онлайн.">
+<meta name="keywords" content="транскрибация, транскрибация аудио в текст, расшифровка аудио в текст, аудио в текст онлайн, перевод аудио в текст, распознавание речи, распознавание русской речи, диаризация, транскрибация видео, расшифровка интервью, транскрибация звонков, субтитры из видео, нейросеть для расшифровки аудио">
+<link rel="canonical" href="https://vibe2text.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vibe2Text — транскрибация и расшифровка аудио и видео в текст">
+<meta property="og:description" content="Распознавание речи, диаризация спикеров, саммари и чат по записи. Транскрибация аудио и видео в текст онлайн.">
+<meta property="og:url" content="https://vibe2text.github.io/">
+<meta property="og:site_name" content="Vibe2Text">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7C5CFC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--p:#7C5CFC;--p2:#6a4ae0;--bg:#ECEAF6;--ink:#1c1830;--muted:#5b5570;--card:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+  a{color:var(--p);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  .hero{background:linear-gradient(160deg,var(--bg),#fff);padding:72px 0 56px;text-align:center}
+  .hero h1{font-size:2.5rem;font-weight:800;line-height:1.15;letter-spacing:-.02em}
+  .hero p{font-size:1.2rem;color:var(--muted);margin:18px auto 28px;max-width:680px}
+  .cta{display:inline-block;background:var(--p);color:#fff;font-weight:700;padding:14px 30px;border-radius:12px;font-size:1.05rem}
+  .cta:hover{background:var(--p2);text-decoration:none}
+  .cta.ghost{background:transparent;color:var(--p);border:2px solid var(--p);margin-left:10px}
+  section{padding:48px 0}
+  h2{font-size:1.7rem;font-weight:800;margin-bottom:22px;letter-spacing:-.01em}
+  h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid #e7e3f2;border-radius:16px;padding:22px}
+  .card p{color:var(--muted)}
+  .lead{color:var(--muted);font-size:1.05rem;max-width:760px;margin-bottom:22px}
+  .steps{counter-reset:s;display:grid;gap:16px}
+  .step{background:var(--bg);border-radius:14px;padding:18px 20px 18px 58px;position:relative}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:18px;width:28px;height:28px;background:var(--p);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700}
+  .tags{display:flex;flex-wrap:wrap;gap:10px}
+  .tag{background:var(--bg);color:var(--p2);font-weight:600;padding:7px 14px;border-radius:999px;font-size:.92rem}
+  .faq details{border:1px solid #e7e3f2;border-radius:12px;padding:14px 18px;margin-bottom:12px}
+  .faq summary{font-weight:700;cursor:pointer}
+  .faq p{color:var(--muted);margin-top:10px}
+  footer{background:var(--ink);color:#cfc9e6;padding:40px 0;text-align:center}
+  footer a{color:#fff;font-weight:600}
+  footer .links{margin:14px 0;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Vibe2Text",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web",
+  "description":"Транскрибация и расшифровка аудио и видео в текст с AI: распознавание русской речи, диаризация спикеров, краткое содержание, action items и чат по записи.",
+  "url":"https://vibe2text.ru",
+  "inLanguage":"ru",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"RUB","description":"Бесплатный лимит для теста транскрибации"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Как перевести аудио в текст?","acceptedAnswer":{"@type":"Answer","text":"Загрузите аудио или видео в Vibe2Text либо вставьте ссылку — нейросеть выполнит распознавание речи и вернёт готовый транскрипт с разбивкой по спикерам и таймкодами."}},
+    {"@type":"Question","name":"Можно ли расшифровать аудио в текст бесплатно?","acceptedAnswer":{"@type":"Answer","text":"Да, на vibe2text.ru есть бесплатный лимит, чтобы попробовать транскрибацию аудио в текст без оплаты. Дальше — по тарифам за длительность записи."}},
+    {"@type":"Question","name":"Поддерживается ли распознавание русской речи?","acceptedAnswer":{"@type":"Answer","text":"Да, распознавание русской речи — основной сценарий. Английская и смешанная речь тоже распознаются."}},
+    {"@type":"Question","name":"Можно ли сделать транскрибацию видео с YouTube?","acceptedAnswer":{"@type":"Answer","text":"Да. Вставьте ссылку на YouTube, RuTube, VK или Vimeo — сервис скачает запись и выполнит транскрибацию видео в текст с субтитрами SRT."}},
+    {"@type":"Question","name":"Есть ли бот для расшифровки аудио в Telegram?","acceptedAnswer":{"@type":"Answer","text":"Да, Telegram-бот @vibe2text_bot. Пришлите ему голосовое сообщение, аудио или видео — бот распознает речь и вернёт расшифровку в текст прямо в чате."}}
+  ]
+}
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109696695', 'ym');
+
+    ym(109696695, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/109696695" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Транскрибация и расшифровка аудио и&nbsp;видео в&nbsp;текст</h1>
+    <p>Vibe2Text переводит аудио и видео в текст с помощью AI: распознавание русской речи, диаризация спикеров, краткое содержание, задачи и чат по записи — онлайн, за минуты.</p>
+    <a class="cta" href="https://vibe2text.ru">Открыть Vibe2Text</a>
+    <a class="cta ghost" href="https://vibe2text.ru/help">Документация</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h2>Что умеет сервис</h2>
+  <p class="lead">Одна загрузка записи — и вы получаете не сырую расшифровку аудио в текст, а готовый рабочий документ: с говорящими, выжимкой смысла и поиском.</p>
+  <div class="grid">
+    <div class="card"><h3>🎙️ Транскрибация в текст</h3><p>Точное распознавание речи онлайн. Нейросеть переводит аудио и видео в текст в разы быстрее реального времени.</p></div>
+    <div class="card"><h3>👥 Диаризация спикеров</h3><p>Определяет, кто и когда говорил. Расшифровка читается как диалог — незаменимо для интервью и переговоров.</p></div>
+    <div class="card"><h3>📝 Саммари и задачи</h3><p>Краткое содержание встречи и список action items автоматически из разговора.</p></div>
+    <div class="card"><h3>💬 Чат по транскрипту</h3><p>Задавайте вопросы по записи на естественном языке — ответ со ссылками на момент.</p></div>
+    <div class="card"><h3>📚 Базы знаний</h3><p>Семантический поиск и сводные smart-отчёты по всему архиву расшифровок.</p></div>
+    <div class="card"><h3>🔗 Импорт по ссылке</h3><p>Транскрибация видео с YouTube, RuTube, VK, Vimeo и прямых ссылок на mp3/mp4.</p></div>
+    <div class="card"><h3>🤖 Telegram-бот</h3><p><a href="https://t.me/vibe2text_bot">@vibe2text_bot</a> — пришлите голосовое, аудио или видео, и бот расшифрует речь в текст прямо в чате.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Как это работает</h2>
+  <div class="steps">
+    <div class="step"><h3>Загрузите запись</h3><p>Аудио (mp3, wav, m4a, ogg) или видео (mp4, mov, webm) — файлом или по ссылке. Длинные совещания и лекции обрабатываются автоматически.</p></div>
+    <div class="step"><h3>Нейросеть распознаёт речь</h3><p>Распознавание русской речи переводит запись в текст, разделяет говорящих и расставляет пословные таймкоды.</p></div>
+    <div class="step"><h3>Получите готовый результат</h3><p>Транскрипт с спикерами, краткое содержание, задачи, главы и чат. Экспорт в DOCX, PDF и субтитры SRT.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Сценарии использования</h2>
+  <div class="tags">
+    <span class="tag">Транскрибация аудио в текст</span>
+    <span class="tag">Расшифровка интервью</span>
+    <span class="tag">Перевод видео в текст</span>
+    <span class="tag">Протокол встречи</span>
+    <span class="tag">Расшифровка телефонных звонков</span>
+    <span class="tag">Транскрибация подкастов</span>
+    <span class="tag">Субтитры из видео</span>
+    <span class="tag">Конспект лекций</span>
+    <span class="tag">Распознавание речи нейросетью</span>
+    <span class="tag">Транскрибация видео с YouTube</span>
+  </div>
+</section>
+
+<section>
+  <h2>Для разработчиков</h2>
+  <p class="lead">Расшифровка аудио в текст встраивается в ваши приложения через API и встроенный MCP-сервер. Готовые клиенты для Python и JavaScript, доступ для AI-агентов (Claude, Cursor, LangChain).</p>
+  <div class="grid">
+    <div class="card"><h3>MCP-сервер</h3><p><a href="https://github.com/vibe2text/vibe2text-mcp">vibe2text-mcp</a> — доступ к транскриптам для внешних агентов.</p></div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Частые вопросы</h2>
+  <details open><summary>Как перевести аудио в текст?</summary><p>Загрузите аудио или видео в Vibe2Text либо вставьте ссылку — нейросеть выполнит распознавание речи и вернёт готовый транскрипт с разбивкой по спикерам и таймкодами.</p></details>
+  <details><summary>Можно ли расшифровать аудио в текст бесплатно?</summary><p>Да, на <a href="https://vibe2text.ru">vibe2text.ru</a> есть бесплатный лимит, чтобы попробовать транскрибацию аудио в текст без оплаты. Дальше — по тарифам за длительность записи.</p></details>
+  <details><summary>Поддерживается ли распознавание русской речи?</summary><p>Да, распознавание русской речи — основной сценарий. Английская и смешанная речь тоже распознаются.</p></details>
+  <details><summary>Можно ли сделать транскрибацию видео с YouTube?</summary><p>Да. Вставьте ссылку на YouTube, RuTube, VK или Vimeo — сервис скачает запись и выполнит транскрибацию видео в текст с субтитрами SRT.</p></details>
+  <details><summary>Есть ли бот для расшифровки аудио в Telegram?</summary><p>Да, Telegram-бот <a href="https://t.me/vibe2text_bot">@vibe2text_bot</a>. Пришлите ему голосовое сообщение, аудио или видео — бот распознает речь и вернёт расшифровку в текст прямо в чате.</p></details>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>Vibe2Text</strong> — транскрибация и расшифровка аудио и видео в текст онлайн
+    <div class="links">
+      <a href="https://vibe2text.ru">Сайт vibe2text.ru</a>
+      <a href="https://vibe2text.ru/help">Справка</a>
+      <a href="https://t.me/vibe2text_bot">Telegram</a>
+      <a href="https://github.com/vibe2text/vibe2text-mcp">GitHub</a>
+    </div>
+    <small>© Vibe2Text. Распознавание речи, диаризация и AI-расшифровка аудио в текст.</small>
+  </div>
+</footer>
+
+</body>
+</html>
